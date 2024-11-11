@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "CommandInsertFieldSchema.json",
+  "type": "object",
+  "properties": {
+    "Name": {
+      "type": "string",
+      "enum": [ "InsertField" ],
+      "description": "Command name must be 'InsertField'"
+    },
+    "FieldText": {
+      "type": "string",
+      "description": "The field text to insert. Do not include {braces}"
+    },
+    "CommandRange": {
+      "type": "string",
+      "enum": [ "Selection", "Paragraphs", "FirstParagraph", "FirstWord", "LastWord", "StartOfParagraph", "EndOfParagraph", "BeforeSelection", "AfterSelection" ],
+      "description": "Defines the range where the style should be applied"
+    }
+  },
+  "required": [ "Name", "FieldText", "CommandRange" ]
+}

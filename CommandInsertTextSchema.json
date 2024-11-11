@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "CommandInsertTextSchema.json",
+  "type": "object",
+  "properties": {
+    "Name": {
+      "type": "string",
+      "enum": [ "InsertText" ],
+      "description": "Command name must be 'InsertText'"
+    },
+    "Text": {
+      "type": "string",
+      "description": "The text to insert",
+      "maxLength": 100
+    },
+    "PreventDuplicates": {
+      "type": "boolean",
+      "description": "Prevents duplicate text from being inserted. Only checks for text before the range. Apart from EndOfParagraph."
+    },
+    "CommandRange": {
+      "type": "string",
+      "enum": [ "Paragraphs", "FirstParagraph", "StartOfParagraph" ],
+      "description": "Defines the range where the style should be applied. Further ranges will be added as more functionality is added."
+    }
+  },
+  "required": [ "Name", "Text", "CommandRange" ]
+}

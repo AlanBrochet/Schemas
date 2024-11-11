@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "Name": {
+        "type": "string",
+        "description": "The name of the ribbon icon"
+      },
+      "Text": {
+        "type": "string",
+        "description": "The text to display on the ribbon icon"
+      },
+      "Size": {
+        "type": "integer",
+        "description": "The size of the icon"
+      },
+      "FontName": {
+        "type": "string",
+        "description": "The font used for the icon text"
+      },
+      "FontSize": {
+        "type": "integer",
+        "description": "The font size used for the icon text"
+      },
+      "FontStyle": {
+        "type": "string",
+        "enum": [
+          "Regular",
+          "Bold",
+          "Italic",
+          "BoldItalic"
+        ],
+        "description": "The font style for the icon text [Future changes required here to combine these values]"
+      },
+      "FontColour": {
+        "type": "string",
+        "description": "The font color for the icon text"
+      },
+      "TextRenderingHint": {
+        "type": "string",
+        "enum": [
+          "AntiAlias",
+          "AntiAliasGridFit",
+          "ClearTypeGridFit",
+          "SingleBitPerPixel",
+          "SingleBitPerPixelGridFit",
+          "SystemDefault"
+        ],
+        "description": "The rendering hint for text on the icon"
+      },
+      "XOffset": {
+        "type": "integer",
+        "description": "The horizontal offset of the text"
+      },
+      "YOffset": {
+        "type": "integer",
+        "description": "The vertical offset of the text"
+      },
+      "Contrast": {
+        "type": "integer",
+        "description": "[DEPRECATED]The contrast level for the icon"
+      }
+    },
+    "required": [
+      "Name",
+      "Text",
+      "Size",
+      "FontName",
+      "FontSize",
+      "XOffset",
+      "YOffset"
+    ]
+  }
+}

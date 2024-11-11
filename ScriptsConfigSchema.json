@@ -1,0 +1,42 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "Name": {
+        "type": "string",
+        "description": "Name of the script"
+      },
+      "Comment": {
+        "type": "string",
+        "description": "Description of what the script does, this is for internal use only."
+      },
+      "Commands": {
+        "type": "array",
+        "items": {
+          "oneOf": [
+            {
+              "$ref": "CommandInsertTextSchema.json"
+            },
+            {
+              "$ref": "CommandInsertFieldSchema.json"
+            },
+            {
+              "$ref": "CommandApplyStyleSchema.json"
+            },
+            {
+              "$ref": "CommandApplyFontFormattingSchema.json"
+            },
+            {
+              "$ref": "CommandDeleteCharactersSchema.json"
+            }
+          ]
+        }
+      }
+    },
+    "required": [
+      "Name",
+      "Commands"
+    ]
+  }
+}
