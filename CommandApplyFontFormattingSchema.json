@@ -10,7 +10,7 @@
     },
     "CommandRange": {
       "type": "string",
-      "enum": [ "Selection", "Paragraphs", "FirstParagraph", "FirstWord", "LastWord", "StartOfParagraph", "EndOfParagraph", "BeforeSelection", "AfterSelection" ],
+      "enum": [ "Selection", "Paragraphs", "FirstParagraph", "LastParagraph" ],
       "description": "Defines the range where the style should be applied"
     },
     "AllCaps": {
