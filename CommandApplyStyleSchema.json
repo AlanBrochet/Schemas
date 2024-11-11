@@ -15,12 +15,12 @@
     "CommandRange": {
       "type": "string",
       "enum": [ "Selection", "Paragraphs", "FirstParagraph", "LastParagraph" ],
-      "description": "Defines the range where the style should be applied"
+      "description": "Defines the range where the command is applied"
     },
     "SubRange": {
       "type": "string",
       "enum": [ "All", "Start", "End", "FirstWord", "LastWord" ],
-      "description": "Refines the range where the style should be applied."
+      "description": "Refines the range where the command is applied."
     }
   },
   "required": [ "Name", "StyleName", "CommandRange" ]
