@@ -13,6 +13,11 @@
       "enum": [ "Selection", "Paragraphs", "FirstParagraph", "LastParagraph" ],
       "description": "Defines the range where the style should be applied"
     },
+    "SubRange": {
+      "type": "string",
+      "enum": [ "All", "Start", "End", "FirstWord", "LastWord" ],
+      "description": "Refines the range where the style should be applied."
+    },
     "AllCaps": {
       "type": "integer",
       "enum": [ 0, 1, 9999998 ],
