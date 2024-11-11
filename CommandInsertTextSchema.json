@@ -19,7 +19,7 @@
     },
     "CommandRange": {
       "type": "string",
-      "enum": [ "Paragraphs", "FirstParagraph", "StartOfParagraph" ],
+      "enum": [ "Selection", "Paragraphs", "FirstParagraph", "LastParagraph" ],
       "description": "Defines the range where the style should be applied. Further ranges will be added as more functionality is added."
     }
   },
