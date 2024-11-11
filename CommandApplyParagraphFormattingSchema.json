@@ -14,12 +14,12 @@
       "description": "Defines the range where the style should be applied"
     },
     "Alignment": {
-      "type": "string",
+      "type": "number",
       "enum": [ 0, 1, 2, 3 ],
       "description": "Sets the alignment of the paragraph (left = 0, center = 1, right = 2, justified = 3)"
     },
     "BaseLineAlignment": {
-      "type": "string",
+      "type": "number",
       "enum": [ 0, 1, 2, 3],
       "description": "Sets the baseline alignment for the paragraph. WdBaselineAlignTop = 0, WdBaselineAlignCenter = 1, WdBaselineAlignBaseline = 2, WdBaselineAlignFarEast50 = 3"
     },
@@ -40,12 +40,12 @@
       "description": "Sets the first line indentation in points"
     },
     "KeepTogether": {
-      "type": "integer",
+      "type": "number",
       "enum": [ 0, 1, -1 ],
       "description": "Can be True (1), False (0), or wdUndefined (-1)"
     },
     "KeepWithNext": {
-      "type": "integer",
+      "type": "number",
       "enum": [ 0, 1, -1 ],
       "description": "Can be True (1), False (0), or wdUndefined (-1)"
     },
@@ -58,7 +58,7 @@
       "description": "Sets the line spacing in points"
     },
     "LineSpacingRule": {
-      "type": "string",
+      "type": "number",
       "enum": [ 0, 1, 2, 3, 4, 5 ],
       "description": "Sets the rule for line spacing. WdLineSpaceSingle = 0, WdLineSpace1pt5 = 1, WdLineSpaceDouble = 2, WdLineSpaceAtLeast = 3, WdLineSpaceExactly = 4, WdLineSpaceMultiple = 5"
     },
@@ -71,22 +71,22 @@
       "description": "Sets the spacing before the paragraph in lines"
     },
     "MirrorIndents": {
-      "type": "integer",
+      "type": "number",
       "enum": [ 0, 1, -1 ],
       "description": "Can be True (1), False (0), or wdUndefined (-1)"
     },
     "NoLineNumber": {
-      "type": "integer",
+      "type": "number",
       "enum": [ 0, 1, -1 ],
       "description": "Can be True (1), False (0), or wdUndefined (-1)"
     },
     "OutlineLevel": {
-      "type": "string",
+      "type": "number",
       "enum": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ],
       "description": "Sets the outline level of the paragraph. WdOutlineLevel1 - WdOutlineLevel9 = outline level, wdOutlineLevelBodyText = 10"
     },
     "PageBreakBefore": {
-      "type": "integer",
+      "type": "number",
       "enum": [ 0, 1, -1 ],
       "description": "Can be True (1), False (0), or wdUndefined (-1)"
     },
@@ -103,7 +103,7 @@
       "description": "Sets the spacing before the paragraph in points"
     },
     "WidowControl": {
-      "type": "integer",
+      "type": "number",
       "enum": [ 0, 1, -1 ],
       "description": "Can be True (1), False (0), or wdUndefined (-1)"
     }
