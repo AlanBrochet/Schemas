@@ -13,6 +13,11 @@
       "enum": [ "Selection", "Paragraphs", "FirstParagraph", "LastParagraph" ],
       "description": "Defines the range where the style should be applied"
     },
+    "SubRange": {
+      "type": "string",
+      "enum": [ "All", "Start", "End", "FirstWord", "LastWord" ],
+      "description": "Refines the range where the style should be applied."
+    },
     "Alignment": {
       "type": "number",
       "enum": [ 0, 1, 2, 3 ],
