@@ -16,19 +16,22 @@
         "items": {
           "oneOf": [
             {
-              "$ref": "CommandInsertTextSchema.json"
+              "$ref": "./CommandInsertTextSchema.json"
             },
             {
-              "$ref": "CommandInsertFieldSchema.json"
+              "$ref": "./CommandInsertFieldSchema.json"
             },
             {
-              "$ref": "CommandApplyStyleSchema.json"
+              "$ref": "./CommandApplyStyleSchema.json"
             },
             {
-              "$ref": "CommandApplyFontFormattingSchema.json"
+              "$ref": "./CommandApplyFontFormattingSchema.json"
             },
             {
-              "$ref": "CommandDeleteCharactersSchema.json"
+              "$ref": "./CommandApplyParagraphFormattingSchema.json"
+            },
+            {
+              "$ref": "./CommandDeleteCharactersSchema.json"
             }
           ]
         }
