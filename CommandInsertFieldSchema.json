@@ -6,11 +6,11 @@
     "Name": {
       "type": "string",
       "enum": [ "InsertField" ],
-      "description": "Command name must be 'InsertField'"
+      "description": "Inserts a simple field in the specified range."
     },
     "FieldText": {
       "type": "string",
-      "description": "The field text to insert. Do not include {braces}"
+      "description": "The field text to insert. This cannot handle fields within fields so keep it simple. Do not include the {braces}"
     },
     "CommandRange": {
       "type": "string",
@@ -19,9 +19,9 @@
     },
     "SubRange": {
       "type": "string",
-      "enum": [ "All", "Start", "End", "FirstWord", "LastWord" ],
+      "enum": [ "All", "Start", "End"],
       "description": "Refines the range where the command is applied."
     }
   },
-  "required": [ "Name", "FieldText", "CommandRange" ]
+  "required": [ "Name", "FieldText", "CommandRange", "SubRange" ]
 }
