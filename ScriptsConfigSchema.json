@@ -5,7 +5,7 @@
     "properties": {
       "Name": {
         "type": "string",
-        "description": "Name of the script"
+        "description": "Name of the script, This must be unique as is it referenced in the OnAction tag of the button."
       },
       "Comment": {
         "type": "string",
@@ -13,6 +13,7 @@
       },
       "Commands": {
         "type": "array",
+        "description": "An array of commands performed by the script",
         "items": {
           "oneOf": [
             {
