@@ -10,7 +10,7 @@
     },
     "Text": {
       "type": "string",
-      "description": "The text to insert",
+      "description": "The text to insert"
     },
     "PreventDuplicates": {
       "type": "boolean",
