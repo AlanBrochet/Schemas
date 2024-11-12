@@ -6,17 +6,17 @@
     "Name": {
       "type": "string",
       "enum": [ "ApplyFontFormatting" ],
-      "description": "Command name must be 'ApplyFontFormatting'"
+      "description": "Applies manual font formatting to the specified range"
     },
     "CommandRange": {
       "type": "string",
       "enum": [ "Selection", "Paragraphs", "FirstParagraph", "LastParagraph" ],
-      "description": "Defines the range where the command will be applied"
+      "description": "Defines the range where the formatting is applied"
     },
     "SubRange": {
       "type": "string",
-      "enum": [ "All", "Start", "End", "FirstWord", "LastWord" ],
-      "description": "Refines the range where the command will be applied."
+      "enum": [ "All", "FirstWord", "LastWord" ],
+      "description": "Refines the range where the formatting is applied."
     },
     "AllCaps": {
       "type": "integer",
@@ -82,5 +82,5 @@
       "description": "Apply underline formatting (None = 0, Single = 1, Underline Words = 2, Double = 3)"
     }
   },
-  "required": [ "Name", "CommandRange" ]
+  "required": [ "Name", "CommandRange", "SubRange" ]
 }
