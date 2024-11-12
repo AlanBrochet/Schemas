@@ -6,7 +6,7 @@
     "Name": {
       "type": "string",
       "enum": [ "ApplyStyle" ],
-      "description": "Command name must be 'ApplyStyle'"
+      "description": "Applies a paragraph style to the specified range."
     },
     "StyleName": {
       "type": "string",
@@ -15,13 +15,13 @@
     "CommandRange": {
       "type": "string",
       "enum": [ "Selection", "Paragraphs", "FirstParagraph", "LastParagraph" ],
-      "description": "Defines the range where the command is applied"
+      "description": "Defines the range where the Style is applied"
     },
     "SubRange": {
       "type": "string",
-      "enum": [ "All", "Start", "End", "FirstWord", "LastWord" ],
-      "description": "Refines the range where the command is applied."
+      "enum": [ "All" ],
+      "description": "This must be set to 'All' as it is only valid at paragraph level."
     }
   },
-  "required": [ "Name", "StyleName", "CommandRange" ]
+  "required": [ "Name", "StyleName", "CommandRange", "SubRange" ]
 }
