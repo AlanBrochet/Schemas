@@ -6,17 +6,17 @@
     "Name": {
       "type": "string",
       "enum": [ "ApplyParagraphFormatting" ],
-      "description": "Command name must be 'ApplypParaFormatting'"
+      "description": "Applies manual paragraph formatting to the defined range."
     },
     "CommandRange": {
       "type": "string",
       "enum": [ "Selection", "Paragraphs", "FirstParagraph", "LastParagraph" ],
-      "description": "Defines the range where the command is applied"
+      "description": "Defines the range where the formatting is applied"
     },
     "SubRange": {
       "type": "string",
-      "enum": [ "All", "Start", "End", "FirstWord", "LastWord" ],
-      "description": "Refines the range where the command is applied."
+      "enum": [ "All" ],
+      "description": "This must be set to All as this formatting only applies to complete paragraphs."
     },
     "Alignment": {
       "type": "number",
@@ -113,5 +113,5 @@
       "description": "Can be True (1), False (0), or wdUndefined (-1)"
     }
   },
-  "required": [ "Name", "CommandRange" ]
+  "required": [ "Name", "CommandRange", "SubRange" ]
 }
