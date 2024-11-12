@@ -6,16 +6,15 @@
     "Name": {
       "type": "string",
       "enum": [ "InsertText" ],
-      "description": "Command name must be 'InsertText'"
+      "description": "Inserts plain text in the specified range."
     },
     "Text": {
       "type": "string",
       "description": "The text to insert",
-      "maxLength": 100
     },
     "PreventDuplicates": {
       "type": "boolean",
-      "description": "Prevents duplicate text from being inserted. Only checks for text before the range. Apart from EndOfParagraph."
+      "description": "Prevents duplicate text from being re-inserted."
     },
     "CommandRange": {
       "type": "string",
@@ -24,9 +23,9 @@
     },
     "SubRange": {
       "type": "string",
-      "enum": [ "All", "Start", "End", "FirstWord", "LastWord" ],
+      "enum": [ "Start", "End" ],
       "description": "Refines the range where the command is applied."
     }
   },
-  "required": [ "Name", "Text", "CommandRange" ]
+  "required": [ "Name", "Text", "CommandRange", "SubRange" ]
 }
