@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "array",
-  "description": "A Ribbon Icon dynamically generates a bitmap image from the text and specified properties."
+  "description": "A Ribbon Icon dynamically generates a bitmap image from the text and specified properties.",
   "items": {
     "type": "object",
     "properties": {
@@ -11,7 +11,7 @@
       },
       "Text": {
         "type": "string",
-        "description": "The text to display on the ribbon icon. This number od characters you can use depends on the FontSize"
+        "description": "The text to display on the ribbon icon. This number of characters you can use depends on the FontSize"
       },
       "Size": {
         "type": "integer",
