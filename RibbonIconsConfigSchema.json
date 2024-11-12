@@ -6,23 +6,23 @@
     "properties": {
       "Name": {
         "type": "string",
-        "description": "The name of the ribbon icon"
+        "description": "The name of the ribbon icon. This needs to be unique as it is used in the tag field for the GetImage callback."
       },
       "Text": {
         "type": "string",
-        "description": "The text to display on the ribbon icon"
+        "description": "The text to display on the ribbon icon. This number od characters you can use depends on the FontSize"
       },
       "Size": {
         "type": "integer",
-        "description": "The size of the icon"
+        "description": "The size of the icon generated. Use 16, 32 or 64. I have found that 32 is ideal for both large and small buttons."
       },
       "FontName": {
         "type": "string",
-        "description": "The font used for the icon text"
+        "description": "The font used for the icon text, such as Arial, Calibri"
       },
       "FontSize": {
         "type": "integer",
-        "description": "The font size used for the icon text"
+        "description": "The font size used for the icon text. A large single letter is a good fontsize for a 32x32 size bitmap."
       },
       "FontStyle": {
         "type": "string",
@@ -32,11 +32,11 @@
           "Italic",
           "BoldItalic"
         ],
-        "description": "The font style for the icon text [Future changes required here to combine these values]"
+        "description": "The font style for the icon text [Future changes are required here to combine these values so you can have bold and italic]"
       },
       "FontColour": {
         "type": "string",
-        "description": "The font color for the icon text"
+        "description": "The font color for the icon text. Use common names like 'Red', 'Black' etc. Search for 'KnownColor Enum' for a full list. This will be changed in the future to allow RGB"
       },
       "TextRenderingHint": {
         "type": "string",
@@ -48,15 +48,15 @@
           "SingleBitPerPixelGridFit",
           "SystemDefault"
         ],
-        "description": "The rendering hint for text on the icon"
+        "description": "This defines how the text is rendered. AntiAlias generally provide a good image."
       },
       "XOffset": {
         "type": "integer",
-        "description": "The horizontal offset of the text"
+        "description": "The horizontal offset of the text in pixels. This is to help place the bitmap on the button. You can use negative numbers if necessary."
       },
       "YOffset": {
         "type": "integer",
-        "description": "The vertical offset of the text"
+        "description": "The vertical offset of the text in pixels. This is to help place the bitmap on the button. You can use negative numbers if necessary."
       },
       "Contrast": {
         "type": "integer",
